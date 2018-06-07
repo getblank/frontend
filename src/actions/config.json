@@ -1,0 +1,2218 @@
+{
+    "_commonSettings": {
+        "access": [
+            {
+                "condition": null,
+                "permissions": "crud",
+                "role": "guest"
+            },
+            {
+                "condition": null,
+                "permissions": "crud",
+                "role": "all"
+            }
+        ],
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "entries": {
+            "buildTime": "2018-06-01T10:17:43.141Z",
+            "commit": "",
+            "defaultLocale": "ru",
+            "lessVars": {},
+            "links": [
+                {
+                    "href": "http://mysite.com/example",
+                    "rel": "canonical"
+                }
+            ],
+            "locales": [
+                "en",
+                "ru"
+            ],
+            "meta": [
+                {
+                    "content": "Application description",
+                    "name": "description"
+                },
+                {
+                    "content": "Application author",
+                    "name": "author"
+                }
+            ],
+            "resetPasswordDisabled": false,
+            "resetPasswordProps": {
+                "password": {
+                    "display": "password",
+                    "formOrder": 2,
+                    "label": "{{$i18n.$settings.resetPassword.newPassword}}",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "resetPasswordRequestProps": {
+                "email": {
+                    "display": "textInput",
+                    "label": "{{$i18n.$settings.common.email}}",
+                    "pattern": {
+                        "expression": "^\\S+@\\S+\\.\\S+$",
+                        "message": "{{$i18n.$settings.signUp.invalidEmail}}"
+                    },
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "signInProps": {
+                "login": {
+                    "display": "textInput",
+                    "formOrder": 1,
+                    "label": "{{$i18n.$settings.common.email}}",
+                    "required": true,
+                    "type": "string"
+                },
+                "password": {
+                    "display": "password",
+                    "formOrder": 2,
+                    "label": "{{$i18n.$settings.common.password}}",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "signUpDisabled": false,
+            "signUpProps": {
+                "email": {
+                    "display": "newUsernameInput",
+                    "formOrder": 1,
+                    "label": "{{$i18n.$settings.common.email}}",
+                    "pattern": {
+                        "expression": "^\\S+@\\S+\\.\\S+$",
+                        "message": "{{$i18n.$settings.signUp.invalidEmail}}"
+                    },
+                    "required": true,
+                    "type": "string"
+                },
+                "eula": {
+                    "display": "checkbox",
+                    "formOrder": 4,
+                    "label": "{{{$i18n.$settings.signUp.eulaCheck}}}",
+                    "required": true,
+                    "type": "bool"
+                },
+                "password": {
+                    "display": "password",
+                    "formOrder": 2,
+                    "label": "{{$i18n.$settings.common.password}}",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "title": "New Blank App",
+            "userActivation": false
+        },
+        "filters": null,
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": {
+            "en": {
+                "comments": {
+                    "label": "Comments",
+                    "placeholder": "Write..."
+                },
+                "common": {
+                    "actionError": "Something went wrong: ",
+                    "administrator": "Administrator",
+                    "apply": "Apply",
+                    "cancel": "Cancel",
+                    "datePattern": "DD.MM.YYYY",
+                    "dateTimePattern": "DD.MM.YYYY HH:MM",
+                    "email": "E-mail address",
+                    "language": "Language",
+                    "loadingData": "loading data",
+                    "month": "Month",
+                    "password": "Password",
+                    "recordsOnPage": "Records on page: ",
+                    "saved": "changes saved",
+                    "today": "Today",
+                    "userName": "Login",
+                    "week": "Week",
+                    "yesterday": "Yesterday"
+                },
+                "errors": {
+                    "EMAIL_NOT_FOUND": "E-mail address not found",
+                    "INVALID_OLD_PASSWORD": "Invalid old password",
+                    "PASSWORD_NOT_MATCHED": "Invalid password",
+                    "action": "Sorry, but we unable to process your request",
+                    "common": "Something went wrong...",
+                    "delete": "Delete error",
+                    "emailInvalid": "Invalid e-mail",
+                    "emailUsed": "E-mail in use",
+                    "invalidPattern": "Incorrect format",
+                    "requiredField": "Required field",
+                    "save": "Error while saving changes",
+                    "sessionExpired": "Session deleted or expired"
+                },
+                "filters": {
+                    "all": "All",
+                    "clear": "reset",
+                    "enterSearchText": "Search",
+                    "filterLoaded": "Filter loaded",
+                    "filterName": "Filter name",
+                    "filterNotFound": "Filter not found",
+                    "filterSaved": "Filter saved",
+                    "filterToLoad": "Which filter do you need to load?",
+                    "loadButton": "Load",
+                    "loadFilterTitle": "Loading filter",
+                    "noFilterNameError": "No filter name",
+                    "noFilterSelectedForLoading": "You need to select a single filter to load",
+                    "noFiltersError": "No filters selected",
+                    "paramsToSave": "Which params do you need to save?",
+                    "saveButton": "Save",
+                    "saveFilterTitle": "Saving filter",
+                    "search": "Search",
+                    "title": "Filter"
+                },
+                "form": {
+                    "addToObjectList": "Add",
+                    "all": "All",
+                    "cancel": "Cancel",
+                    "delete": "Delete",
+                    "deleted": "Item deleted",
+                    "dropFile": "or drop here",
+                    "e404": "There is no such object",
+                    "e404prompt": "Please create one or select from list",
+                    "emptyPreview": "Please select element from list...",
+                    "filterNotMatch": "Selected object does not match filter conditions",
+                    "moved": "Item moved to another folder",
+                    "newObject": "New object",
+                    "notSaved": "Not saved – ",
+                    "openMoved": "Show",
+                    "pickFile": "Choose file",
+                    "save": "Save",
+                    "selected": "Selected"
+                },
+                "install": {
+                    "accept": "Accept",
+                    "createRoot": "Create root account",
+                    "hello": "Hi, let's start now",
+                    "license": "License agreement",
+                    "next": "Next"
+                },
+                "lists": {
+                    "empty": "Looks like there is nothing here...",
+                    "new": "Creating item",
+                    "notFound": "Nothing found"
+                },
+                "notifications": {
+                    "empty": "No notifications",
+                    "previously": "Previously"
+                },
+                "profile": {
+                    "changeLogin": "Login change",
+                    "link": "Profile",
+                    "newLogin": "New login",
+                    "passwordSaved": "Password did change",
+                    "saved": "Profile info did save",
+                    "title": "Profile"
+                },
+                "resetPassword": {
+                    "action": "change",
+                    "newPassword": "New password",
+                    "oldPassword": "Current password",
+                    "successEmailSubject": "Password was changed",
+                    "title": "Password change"
+                },
+                "sendResetLink": {
+                    "action": "Send link",
+                    "emailSubject": "Password restore",
+                    "link": "I forgot password",
+                    "title": "Password restore"
+                },
+                "signIn": {
+                    "action": "Sign in",
+                    "error": "Login or password incorrect",
+                    "invalidPassword": "Invalid password",
+                    "invalidUserData": "Invalid user data, please contact system administrator",
+                    "restoreLinkSent": "Email with recent link sent. If you provide correct address, you will receive it within 10 minutes",
+                    "title": "Sign in",
+                    "userNotFound": "User not found"
+                },
+                "signOut": {
+                    "action": "Sign out"
+                },
+                "signUp": {
+                    "action": "Register",
+                    "activationEmailSubject": "Account activation",
+                    "eulaCheck": "I accept the terms in the license agreement",
+                    "invalidEmail": "Invalid email",
+                    "loginInUse": "E-mail already in use",
+                    "registrationSuccessEmailSubject": "Congratulations with registration",
+                    "subscribeCheck": "I want to receive information e-mails",
+                    "success": "Successful registration. You can sign in now using your e-mail and password.",
+                    "successNeedActivation": "An activation email has been sent to the email address provided.",
+                    "title": "Registration"
+                }
+            },
+            "ru": {
+                "comments": {
+                    "label": "Комментарии",
+                    "placeholder": "Написать..."
+                },
+                "common": {
+                    "actionError": "Что-то пошло не так: ",
+                    "administrator": "Администратор",
+                    "apply": "Применить",
+                    "cancel": "Отменить",
+                    "datePattern": "ДД.ММ.ГГГГ",
+                    "dateTimePattern": "ДД.ММ.ГГГГ ЧЧ:ММ",
+                    "email": "Адрес электронной почты",
+                    "language": "Язык",
+                    "loadingData": "загрузка данных",
+                    "month": "Месяц",
+                    "password": "Пароль",
+                    "recordsOnPage": "Строк на странице: ",
+                    "saved": "изменения сохранены",
+                    "today": "Сегодня",
+                    "userName": "Имя пользователя",
+                    "week": "Неделя",
+                    "yesterday": "Вчера"
+                },
+                "errors": {
+                    "EMAIL_NOT_FOUND": "E-mail адрес не найден",
+                    "INVALID_OLD_PASSWORD": "Старый пароль не правильный",
+                    "PASSWORD_NOT_MATCHED": "Неверный пароль",
+                    "action": "Ошибка",
+                    "common": "Произошла ошибка:",
+                    "delete": "Ошибка при удалении",
+                    "emailInvalid": "Некорректный e-mail",
+                    "emailUsed": "E-mail занят",
+                    "invalidPattern": "Неверный формат",
+                    "requiredField": "Обязательное поле",
+                    "save": "Ошибка при сохранении изменений",
+                    "sessionExpired": "Время жизни сессии истекло, либо она была удалена"
+                },
+                "filters": {
+                    "all": "Все",
+                    "clear": "Сбросить",
+                    "enterSearchText": "Поиск",
+                    "filterLoaded": "Фильтр загружен",
+                    "filterName": "Название фильтра",
+                    "filterNotFound": "Фильтр не найден",
+                    "filterSaved": "Фильтр сохранён",
+                    "filterToLoad": "Какой фильтр следует загрузить?",
+                    "loadButton": "Загрузить",
+                    "loadFilterTitle": "Загрузка фильтра",
+                    "noFilterNameError": "Не указано имя фильтра",
+                    "noFilterSelectedForLoading": "Нужно выбрать единственный фильтр для загрузки",
+                    "noFiltersError": "Не выбраны фильтры",
+                    "paramsToSave": "Какие параметры следует сохранить?",
+                    "saveButton": "Сохранить",
+                    "saveFilterTitle": "Сохранение фильтра",
+                    "search": "Поиск",
+                    "title": "Фильтр"
+                },
+                "form": {
+                    "addToObjectList": "Добавить",
+                    "all": "Все",
+                    "cancel": "Отменить",
+                    "delete": "Удалить",
+                    "deleted": "Объект удален",
+                    "dropFile": "или перетащите сюда",
+                    "e404": "Ой, а такого объекта у нас нет...",
+                    "e404prompt": "Можно выбрать что-нибудь другое из списка или добавить новую запись",
+                    "emptyPreview": "Выберите объект для отображения...",
+                    "filterNotMatch": "Выбранный объект не попадает под условия фильтра",
+                    "moved": "Объект перемещен в другую папку",
+                    "newObject": "Новый объект",
+                    "notSaved": "Не сохранено – ",
+                    "openMoved": "Показать",
+                    "pickFile": "Выберите файл",
+                    "save": "Сохранить",
+                    "selected": "Выбранные"
+                },
+                "install": {
+                    "accept": "Принять",
+                    "createRoot": "Создание аккаунта администратора",
+                    "hello": "Привет. Скоро начнем.",
+                    "license": "Лицензионное соглашение",
+                    "next": "Далее"
+                },
+                "lists": {
+                    "empty": "Похоже, тут ничего нет...",
+                    "new": "Добавление записи",
+                    "notFound": "Ничего не найдено"
+                },
+                "notifications": {
+                    "empty": "Уведомлений нет",
+                    "previously": "Ранее"
+                },
+                "profile": {
+                    "changeLogin": "Изменение имени пользователя",
+                    "link": "Профиль",
+                    "newLogin": "Новое имя пользователя",
+                    "passwordSaved": "Пароль изменен",
+                    "saved": "Данные профиля сохранены",
+                    "title": "Профиль"
+                },
+                "resetPassword": {
+                    "action": "Сменить пароль",
+                    "newPassword": "Новый пароль",
+                    "oldPassword": "Текущий пароль",
+                    "successEmailSubject": "Пароль успешно изменён",
+                    "title": "Изменение пароля"
+                },
+                "sendResetLink": {
+                    "action": "Отправить ссылку",
+                    "emailSubject": "Восстановление пароля",
+                    "link": "Я забыл пароль",
+                    "title": "Восстановление пароля"
+                },
+                "signIn": {
+                    "action": "Войти",
+                    "error": "Неверное имя пользователя или пароль",
+                    "invalidPassword": "Неверный пароль",
+                    "invalidUserData": "Проблемы с учетной записью, пожалуйста, обратитесь к системному администратору",
+                    "restoreLinkSent": "Письмо со ссылкой для сброса пароля отправлено. Если был указан корректный адрес, вы получите письмо в течение 10 минут",
+                    "title": "Вход",
+                    "userNotFound": "Пользователь не найден"
+                },
+                "signOut": {
+                    "action": "Выйти"
+                },
+                "signUp": {
+                    "action": "Зарегистрироваться",
+                    "activationEmailSubject": "Активация аккаунта",
+                    "eulaCheck": "Я принимаю условия лицензионного соглашения",
+                    "invalidEmail": "Неправильный адрес email",
+                    "loginInUse": "E-mail занят",
+                    "registrationSuccessEmailSubject": "Поздравляем с регистрацией",
+                    "subscribeCheck": "Я согласен получать рассылку",
+                    "success": "Регистрация прошла успешно. Вы можете войти, используя свои e-mail и пароль.",
+                    "successNeedActivation": "На указанный вами адрес отправлено письмо для активации аккаунта.",
+                    "title": "Регистрация"
+                }
+            }
+        },
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": null,
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "map",
+        "version": 0
+    },
+    "_default": {
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": {
+            "_default": {
+                "display": "",
+                "multi": false,
+                "query": {
+                    "name": {
+                        "$options": "i",
+                        "$regex": "$value"
+                    }
+                },
+                "utc": false
+            }
+        },
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": null,
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": {
+            "_deleted": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "bool"
+            },
+            "_id": {
+                "configurable": true,
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "readOnly": true,
+                "required": true,
+                "type": "string"
+            },
+            "_ownerId": {
+                "configurable": true,
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "required": true,
+                "store": "users",
+                "type": "ref"
+            },
+            "createdAt": {
+                "configurable": true,
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "date"
+            },
+            "createdBy": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "store": "users",
+                "type": "ref"
+            },
+            "deletedAt": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "date"
+            },
+            "deletedBy": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "store": "users",
+                "type": "ref"
+            },
+            "name": {
+                "configurable": true,
+                "display": "headerInput",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "updatedAt": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "date"
+            },
+            "updatedBy": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "store": "users",
+                "type": "ref"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "directory",
+        "version": 0
+    },
+    "_defaultNotifications": {
+        "access": [
+            {
+                "condition": {
+                    "_ownerId": {
+                        "$expression": "$user._id"
+                    }
+                },
+                "permissions": "rdv",
+                "role": "all"
+            },
+            {
+                "condition": {
+                    "_ownerId": {
+                        "$expression": "$user._id"
+                    }
+                },
+                "permissions": "rdv",
+                "role": "root"
+            }
+        ],
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": null,
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": null,
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": {
+            "_id": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "readOnly": true,
+                "type": "string"
+            },
+            "details": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "event": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "expireAt": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "date"
+            },
+            "level": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "message": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "relatedObjects": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "props": {
+                    "_id": {
+                        "display": "none",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "type": "string"
+                    },
+                    "mode": {
+                        "display": "none",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "display": "none",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "type": "string"
+                    },
+                    "store": {
+                        "display": "none",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "type": "string"
+                    }
+                },
+                "type": "objectList"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "notification",
+        "version": 0
+    },
+    "_defaultProcess": {
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": {
+            "_state": {
+                "display": "",
+                "multi": false,
+                "utc": false
+            }
+        },
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": null,
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": {
+            "_result": {
+                "configurable": true,
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "_state": {
+                "configurable": true,
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "process",
+        "version": 0
+    },
+    "_defaultSingle": {
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": null,
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": null,
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": {
+            "name": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "single",
+        "version": 0
+    },
+    "_nav": {
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "entries": {
+            "config": {
+                "label": "Administration"
+            }
+        },
+        "filters": null,
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": null,
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": null,
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "map",
+        "version": 0
+    },
+    "_roles": {
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "entries": {
+            "admin": {
+                "label": "{{$i18n.$settings.common.administrator}}"
+            },
+            "all": {
+                "display": "none",
+                "label": "all"
+            },
+            "root": {
+                "display": "none",
+                "label": "root"
+            }
+        },
+        "filters": null,
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": null,
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": null,
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "map",
+        "version": 0
+    },
+    "_serverSettings": {
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "entries": {
+            "passwordResetTokenExpiration": "0:10",
+            "registerTokenExpiration": "0:60"
+        },
+        "filters": null,
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": null,
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": null,
+        "store": "",
+        "storeActions": [
+            {
+                "disableItemReadyCheck": false,
+                "hideInHeader": false,
+                "icon": "",
+                "_id": "restdoc",
+                "label": "",
+                "multi": false,
+                "script": "\n                    const fs = require(\"fs\");\n                    const hs = require(\"handlebars\");\n                    hs.registerHelper(\"toJSON\", function (object) {\n                        return new hs.SafeString(JSON.stringify(object));\n                    });\n                    let src, partial;\n\n                    return fs.readLib(\"templates/rest-api-template.html\")\n                        .then(res => {\n                            src = res;\n                            return fs.readLib(\"templates/rest-api-list-partial.html\");\n                        })\n                        .then(res => {\n                            partial = res;\n                            const template = hs.compile(src);\n                            hs.registerPartial(\"propsList\", partial);\n                            return template({ config: $data });\n                        });\n                ",
+                "showInList": false,
+                "groupAccess": "",
+                "ownerAccess": "",
+                "props": null
+            }
+        ],
+        "storeLifeCycle": {},
+        "type": "map",
+        "version": 0
+    },
+    "emailSettings": {
+        "access": [
+            {
+                "condition": null,
+                "permissions": "vcrux",
+                "role": "root"
+            }
+        ],
+        "actions": [
+            {
+                "disableItemReadyCheck": false,
+                "hideInHeader": false,
+                "icon": "",
+                "_id": "test",
+                "label": "Test",
+                "multi": false,
+                "script": "\n                    var email = require(\"email\");\n                    var msg = {\n                        to: $data.email,\n                        subject: \"TEST\",\n                        body: $data.body,\n                    };\n                    console.debug(msg);\n                    var e = email.send(msg, function (e) {\n                        if (e != null) {\n                            console.error(e);\n                        }\n                    });\n                    if (e != null) {\n                        return { error: e };\n                    }\n                    return { result: \"SUCCESS\" };\n                ",
+                "showInList": false,
+                "type": "form",
+                "groupAccess": "",
+                "ownerAccess": "",
+                "props": {
+                    "body": {
+                        "display": "textInput",
+                        "formOrder": 30,
+                        "groupAccess": "",
+                        "label": "Body",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "required": true,
+                        "type": ""
+                    },
+                    "email": {
+                        "display": "textInput",
+                        "formOrder": 10,
+                        "groupAccess": "",
+                        "label": "To",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "required": true,
+                        "type": ""
+                    },
+                    "subject": {
+                        "display": "textInput",
+                        "formOrder": 20,
+                        "groupAccess": "",
+                        "label": "Subject",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "required": true,
+                        "type": ""
+                    }
+                }
+            }
+        ],
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": null,
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": {
+            "en": {
+                "pluralGenitiveLocal": "Email transport settings",
+                "pluralLocal": "Email transport settings",
+                "singularAccusativeLocal": "Email transport settings",
+                "singularLocal": "Email transport settings"
+            },
+            "ru": {
+                "pluralGenitiveLocal": "Настройки отправки почты",
+                "pluralLocal": "Настройки отправки почты",
+                "singularAccusativeLocal": "Настройки отправки почты",
+                "singularLocal": "Настройки отправки почты"
+            },
+            "tr": {
+                "pluralGenitiveLocal": "Email transport settings",
+                "pluralLocal": "Email transport settings",
+                "singularAccusativeLocal": "Email transport settings",
+                "singularLocal": "Email transport settings"
+            }
+        },
+        "label": "{{$i18n.pluralLocal}}",
+        "navGroup": "config",
+        "navOrder": 10,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": {
+            "from": {
+                "display": "textInput",
+                "formOrder": 50,
+                "groupAccess": "",
+                "label": "From",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "host": {
+                "display": "textInput",
+                "formOrder": 10,
+                "groupAccess": "",
+                "label": "Host",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "required": true,
+                "type": "string"
+            },
+            "password": {
+                "display": "password",
+                "formOrder": 40,
+                "groupAccess": "",
+                "label": "Password",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "required": true,
+                "type": "string"
+            },
+            "port": {
+                "display": "numberInput",
+                "formOrder": 20,
+                "groupAccess": "",
+                "label": "Port",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "required": true,
+                "type": "int"
+            },
+            "testMode": {
+                "default": false,
+                "display": "checkbox",
+                "formOrder": 60,
+                "groupAccess": "",
+                "label": "Test Mode",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "bool"
+            },
+            "to": {
+                "display": "textInput",
+                "formOrder": 70,
+                "groupAccess": "",
+                "hidden": "!$item.testMode",
+                "label": "(Test) To",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "required": "$item.testMode",
+                "type": "string"
+            },
+            "username": {
+                "display": "textInput",
+                "formOrder": 30,
+                "groupAccess": "",
+                "label": "Username",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "single",
+        "version": 0
+    },
+    "profile": {
+        "access": [
+            {
+                "condition": null,
+                "permissions": "vrux",
+                "role": "root"
+            },
+            {
+                "condition": {
+                    "_ownerId": {
+                        "$expression": "$user._id"
+                    }
+                },
+                "permissions": "vrux",
+                "role": "all"
+            }
+        ],
+        "actions": [
+            {
+                "disableItemReadyCheck": false,
+                "hideInHeader": false,
+                "icon": "",
+                "_id": "changePassword",
+                "label": "{{$i18n.changePasswordAction}}",
+                "multi": false,
+                "script": "\n                    const crypto = require(\"crypto\");\n                    const i18n = require(\"i18n\");\n                    const hash = require(\"hash\");\n                    if (!$data.newPassword || (!$data.oldPassword && !$user.noPassword)) {\n                        return \"Invalid args\";\n                    }\n\n                    let user;\n                    return $db.get(\"users\", $item._ownerId).then((_user) => {\n                        if (_user._deleted) {\n                            throw new Error();\n                        }\n\n                        user = _user;\n                        if ($user.noPassword) {\n                            return;\n                        }\n\n                        if (user.password == null) {\n                            throw new Error();\n                        }\n\n                        const md5pass = crypto.createHash(\"md5\").update($data.oldPassword).digest(\"hex\");\n                        return hash.calc(md5pass, user.password.salt);\n                    }).then((res) => {\n                        if (!$user.noPassword && res !== user.password.key) {\n                            throw new UserError(i18n.get(\"profile.invalidPasswordError\", $user.lang));\n                        }\n\n                        const password = crypto.createHash(\"md5\").update($data.newPassword).digest(\"hex\");\n                        return $db.set(\"users\", { _id: $item._ownerId, noPassword: null, password });\n                    }).then(() => {\n                        $db.notify(\"securityNotifications\", [$user._id], {\n                            message: i18n.get(\"profile.passwordChangedMessage\", $user.lang),\n                        });\n                    });\n                ",
+                "showInList": false,
+                "type": "form",
+                "groupAccess": "",
+                "ownerAccess": "",
+                "props": {
+                    "newPassword": {
+                        "display": "password",
+                        "formOrder": 1,
+                        "groupAccess": "",
+                        "label": "{{$i18n.newPasswordLabel}}",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "oldPassword": {
+                        "display": "password",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "hidden": "$user.noPassword",
+                        "label": "{{$i18n.oldPasswordLabel}}",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "required": "!$user.noPassword",
+                        "type": "string"
+                    }
+                }
+            }
+        ],
+        "display": "single",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": {
+            "userFilter": {
+                "display": "searchBox",
+                "filterBy": "_id",
+                "label": "User",
+                "multi": true,
+                "query": {
+                    "_ownerId": "$value"
+                },
+                "searchBy": [
+                    "name",
+                    "email",
+                    "clientId"
+                ],
+                "store": "users",
+                "utc": false
+            }
+        },
+        "formTabs": [
+            {
+                "_id": "info",
+                "label": "{{$i18n.infoTabLabel}}"
+            },
+            {
+                "_id": "security",
+                "label": "{{$i18n.securityTabLabel}}"
+            }
+        ],
+        "groupAccess": "",
+        "html": "",
+        "i18n": {
+            "_ownerIdLabel": "Учетная запись",
+            "changePasswordAction": "Сменить пароль",
+            "infoTabLabel": "Информация",
+            "invalidPasswordError": "Текущий пароль не совпадает",
+            "lastNameLabel": "Фамилия",
+            "nameLabel": "Имя",
+            "newPasswordLabel": "Новый пароль",
+            "oldPasswordLabel": "Текущий пароль",
+            "passwordChangedMessage": "Пароль изменён",
+            "securityTabLabel": "Безопасность",
+            "sessionsLabel": "Сессии",
+            "storeLabel": "Профиль"
+        },
+        "label": "{{$i18n.storeLabel}}",
+        "navGroup": "profile",
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": {
+            "_ownerId": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "r",
+                        "role": "all"
+                    }
+                ],
+                "disabled": true,
+                "display": "searchBox",
+                "formOrder": 500,
+                "formTab": "info",
+                "groupAccess": "",
+                "hidden": "($user.roles || []).indexOf('root') < 0",
+                "label": "{{$i18n._ownerIdLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "oppositeProp": "profileId",
+                "ownerAccess": "",
+                "searchBy": [
+                    "login"
+                ],
+                "store": "users",
+                "type": "ref"
+            },
+            "lastName": {
+                "display": "textInput",
+                "formOrder": 10,
+                "formTab": "info",
+                "groupAccess": "",
+                "label": "{{$i18n.lastNameLabel}}",
+                "maxLength": 50,
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": ""
+            },
+            "login": {
+                "display": "textInput",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "{{$i18n.$stores.users.loginLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "name": {
+                "display": "textInput",
+                "formOrder": 20,
+                "formTab": "info",
+                "groupAccess": "",
+                "label": "{{$i18n.nameLabel}}",
+                "maxLength": 50,
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": ""
+            },
+            "securityActions": {
+                "actions": [
+                    {
+                        "_id": "changePassword",
+                        "className": "btn btn-accent"
+                    }
+                ],
+                "display": "",
+                "formOrder": 0,
+                "formTab": "security",
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "action"
+            },
+            "sessions": {
+                "disabled": true,
+                "display": "",
+                "formOrder": 1000,
+                "formTab": "info",
+                "groupAccess": "",
+                "hidden": true,
+                "label": "{{$i18n.sessionsLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "props": {
+                    "apiKey": {
+                        "display": "text",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "label": "ID",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "type": "string"
+                    },
+                    "connections": {
+                        "display": "text",
+                        "formOrder": 10,
+                        "groupAccess": "",
+                        "label": "Active connections",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "type": "int"
+                    }
+                },
+                "type": "objectList"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {
+            "didStart": "\n                let r = 0;\n                const updateUserSessions = (session) => {\n                    let _r = ++r;\n                    const locker = \"sessions-update-\" + session.apiKey + \"-__v:\" + session.__v;\n                    sync.once(locker, () => {\n                        let userSessions = sessions.get().filter(s => s.userId === session.userId).map((s) => {\n                            return {\n                                apiKey: s.apiKey,\n                                connections: (s.connections || []).length,\n                            };\n                        });\n                        console.debug(\"Sessions update for user\", session.userId, \"Sessions:\", JSON.stringify(userSessions));\n                        $db.get(\"profile\", { _ownerId: session.userId })\n                            .then((p) => {\n                                if (_r === r) {\n                                    console.debug(\"Updating profile sessions\");\n                                    $db.set(\n                                        \"profile\",\n                                        { _id: p._id, sessions: userSessions },\n                                        { noValidate: true },\n                                        (err) => {\n                                            if (err) {\n                                                console.error(\"Profile update error:\", err);\n                                            }\n                                        }\n                                    );\n                                }\n                            })\n                            .catch(() => {\n                                if (_r === r) {\n                                    console.debug(\"Profile not found, creating...\");\n                                    $db.get(\"users\", session.userId)\n                                        .then(u => {\n                                            if (u == null) { throw new Error(\"user not found\") }\n                                            return $db.insert(\n                                                \"profile\",\n                                                { _ownerId: session.userId, sessions: userSessions, login: u.login },\n                                                { noValidate: true },\n                                                (err) => {\n                                                    if (err) {\n                                                        console.error(\"Profile create error:\", err);\n                                                    }\n                                                });\n                                        })\n                                        .catch(e => console.debug(\"Error while creating profile for user:\", session.userId));\n                                }\n                            });\n                    });\n                };\n                sessions.on(\"create\", updateUserSessions);\n                sessions.on(\"update\", updateUserSessions);\n                sessions.on(\"delete\", updateUserSessions);\n            "
+        },
+        "type": "",
+        "version": 0
+    },
+    "profiles": {
+        "access": [
+            {
+                "condition": null,
+                "permissions": "vrux",
+                "role": "root"
+            },
+            {
+                "condition": null,
+                "permissions": "vrux",
+                "role": "admin"
+            }
+        ],
+        "baseStore": "profile",
+        "display": "list",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": {
+            "userFilter": {
+                "display": "searchBox",
+                "filterBy": "_id",
+                "label": "User",
+                "multi": true,
+                "query": {
+                    "_ownerId": "$value"
+                },
+                "searchBy": [
+                    "name",
+                    "email",
+                    "clientId"
+                ],
+                "store": "users",
+                "utc": false
+            }
+        },
+        "formTabs": [
+            {
+                "_id": "info",
+                "label": "{{$i18n.infoTabLabel}}"
+            },
+            {
+                "_id": "security",
+                "label": "{{$i18n.securityTabLabel}}"
+            }
+        ],
+        "groupAccess": "",
+        "headerTemplate": "{{#if $item.login}}{{$item.login}}{{else}}{{$item._ownerId}}{{/if}}",
+        "html": "",
+        "i18n": {
+            "_ownerIdLabel": "Учетная запись",
+            "changePasswordAction": "Сменить пароль",
+            "infoTabLabel": "Информация",
+            "invalidPasswordError": "Текущий пароль не совпадает",
+            "lastNameLabel": "Фамилия",
+            "nameLabel": "Имя",
+            "newPasswordLabel": "Новый пароль",
+            "oldPasswordLabel": "Текущий пароль",
+            "passwordChangedMessage": "Пароль изменён",
+            "securityTabLabel": "Безопасность",
+            "sessionsLabel": "Сессии",
+            "storeLabel": "Профили"
+        },
+        "label": "{{$i18n.storeLabel}}",
+        "navGroup": "config",
+        "navOrder": 1000,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": {
+            "_ownerId": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "r",
+                        "role": "all"
+                    }
+                ],
+                "disabled": true,
+                "display": "searchBox",
+                "formOrder": 500,
+                "formTab": "info",
+                "groupAccess": "",
+                "hidden": "($user.roles || []).indexOf('root') < 0",
+                "label": "{{$i18n._ownerIdLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "oppositeProp": "profileId",
+                "ownerAccess": "",
+                "searchBy": [
+                    "login"
+                ],
+                "store": "users",
+                "type": "ref"
+            },
+            "lastName": {
+                "display": "textInput",
+                "formOrder": 10,
+                "formTab": "info",
+                "groupAccess": "",
+                "label": "{{$i18n.lastNameLabel}}",
+                "maxLength": 50,
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": ""
+            },
+            "login": {
+                "display": "textInput",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "{{$i18n.$stores.users.loginLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "name": {
+                "display": "textInput",
+                "formOrder": 20,
+                "formTab": "info",
+                "groupAccess": "",
+                "label": "{{$i18n.nameLabel}}",
+                "maxLength": 50,
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": ""
+            },
+            "securityActions": {
+                "actions": [
+                    {
+                        "_id": "changePassword",
+                        "className": "btn btn-accent"
+                    }
+                ],
+                "display": "",
+                "formOrder": 0,
+                "formTab": "security",
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "action"
+            },
+            "sessions": {
+                "disabled": true,
+                "display": "",
+                "formOrder": 1000,
+                "formTab": "info",
+                "groupAccess": "",
+                "hidden": true,
+                "label": "{{$i18n.sessionsLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "props": {
+                    "apiKey": {
+                        "display": "text",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "label": "ID",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "type": "string"
+                    },
+                    "connections": {
+                        "display": "text",
+                        "formOrder": 10,
+                        "groupAccess": "",
+                        "label": "Active connections",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "type": "int"
+                    }
+                },
+                "type": "objectList"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "",
+        "version": 0
+    },
+    "run": {
+        "access": [
+            {
+                "condition": null,
+                "permissions": "vcrudx",
+                "role": "root"
+            }
+        ],
+        "actions": [
+            {
+                "clientPreScript": "\n                    return {\n                        code: $item.code,\n                    };\n                ",
+                "disableItemReadyCheck": true,
+                "hideInHeader": false,
+                "icon": "",
+                "_id": "run",
+                "label": "Выполнить",
+                "multi": false,
+                "script": "\n                    var f = new Function(\"$db\", \"$item\", \"require\", $data.code);\n                    var res = f($db, $item, require);\n                    if (res instanceof Promise) {\n                        return res.then(promiseRes => {\n                            if (typeof promiseRes !== \"string\") {\n                                promiseRes = JSON.stringify(promiseRes, \"\", \"  \");\n                            }\n                            return $db.set(\"run\", { _id: $item._id, response: promiseRes + \"\" });\n                        }).catch(promiseErr => {\n                            if (typeof promiseErr !== \"string\") {\n                                promiseErr = JSON.stringify(promiseErr, \"\", \"  \");\n                            }\n                            return $db.set(\"run\", { _id: $item._id, response: \"ERROR: \" + promiseErr });\n                        });\n                    }\n                    if (typeof res !== \"string\") {\n                        res = JSON.stringify(res, \"\", \"  \");\n                    }\n                    return $db.set(\"run\", { _id: $item._id, response: res + \"\" });\n                ",
+                "showInList": false,
+                "groupAccess": "",
+                "ownerAccess": "",
+                "props": null
+            }
+        ],
+        "display": "list",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": {},
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": {
+            "storeLabel": "Run JS"
+        },
+        "label": "{{$i18n.storeLabel}}",
+        "navGroup": "config",
+        "navOrder": 100,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": {
+            "code": {
+                "display": "codeEditor",
+                "formOrder": 10,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "name": {
+                "default": "New script",
+                "display": "",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "Script name",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "response": {
+                "display": "code",
+                "formOrder": 30,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "run": {
+                "actions": [
+                    {
+                        "_id": "run"
+                    }
+                ],
+                "display": "",
+                "formOrder": 20,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "action"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "",
+        "version": 0
+    },
+    "securityNotifications": {
+        "access": [
+            {
+                "condition": {
+                    "_ownerId": {
+                        "$expression": "$user._id"
+                    }
+                },
+                "permissions": "rud",
+                "role": "root"
+            },
+            {
+                "condition": {
+                    "_ownerId": {
+                        "$expression": "$user._id"
+                    }
+                },
+                "permissions": "rud",
+                "role": "all"
+            }
+        ],
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": null,
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": null,
+        "navOrder": 0,
+        "objectLifeCycle": {},
+        "ownerAccess": "",
+        "props": null,
+        "store": "",
+        "storeLifeCycle": {},
+        "type": "notification",
+        "version": 0
+    },
+    "syslog": {
+        "access": [
+            {
+                "condition": null,
+                "permissions": "vcrud",
+                "role": "root"
+            }
+        ],
+        "display": "table",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": {},
+        "formTabs": null,
+        "groupAccess": "",
+        "html": "",
+        "i18n": {
+            "en": {
+                "storeLabel": "Actions history"
+            },
+            "ru": {
+                "storeLabel": "Журнал операций"
+            }
+        },
+        "label": "{{$i18n.storeLabel}}",
+        "navGroup": "config",
+        "navOrder": 90,
+        "objectLifeCycle": {},
+        "orderBy": "-createdAt",
+        "ownerAccess": "",
+        "props": {
+            "action": {
+                "display": "text",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "Action",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "actionData": {
+                "display": "text",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "Action data",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "actionSource": {
+                "display": "select",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "options": [
+                    {
+                        "label": "JavaScript API",
+                        "value": "JS"
+                    },
+                    {
+                        "label": "WAMP API",
+                        "value": "WAMP"
+                    },
+                    {
+                        "label": "HTTP API",
+                        "value": "HTTP"
+                    },
+                    {
+                        "label": "System",
+                        "value": "System"
+                    }
+                ],
+                "ownerAccess": "",
+                "type": ""
+            },
+            "createdAt": {
+                "display": "",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "DateTime",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": ""
+            },
+            "itemId": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "Item Id",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "store": {
+                "display": "text",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "Store",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "userId": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "populateIn": "user",
+                "readOnly": true,
+                "store": "users",
+                "type": "ref"
+            },
+            "userName": {
+                "display": "",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "User",
+                "load": "\n                    return $item.user ? $item.user.name : \"\";\n                ",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "virtual"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {},
+        "tableColumns": [
+            "createdAt",
+            "actionSource",
+            "userName",
+            "store",
+            "itemId",
+            "action",
+            "actionData"
+        ],
+        "type": "",
+        "version": 0
+    },
+    "users": {
+        "access": [
+            {
+                "condition": null,
+                "permissions": "vcrudx",
+                "role": "root"
+            },
+            {
+                "condition": {
+                    "_id": {
+                        "$ne": "00000000-0000-0000-0000-000000000000"
+                    }
+                },
+                "permissions": "vcrudx",
+                "role": "admin"
+            },
+            {
+                "condition": {
+                    "_id": {
+                        "$expression": "$user._id"
+                    }
+                },
+                "permissions": "r",
+                "role": "all"
+            }
+        ],
+        "actions": [
+            {
+                "disableItemReadyCheck": false,
+                "hidden": "$item.isActive || $item._id === '00000000-0000-0000-0000-000000000000'",
+                "hideInHeader": false,
+                "icon": "",
+                "_id": "activate",
+                "label": "{{$i18n.activateActionLabel}}",
+                "multi": false,
+                "script": "\n                    return $db.set(\"users\", { _id: $item._id, isActive: true, _activationToken: null });\n                ",
+                "showInList": false,
+                "groupAccess": "",
+                "ownerAccess": "",
+                "props": null
+            },
+            {
+                "disableItemReadyCheck": false,
+                "hidden": "!$item.isActive || $item._id === '00000000-0000-0000-0000-000000000000'",
+                "hideInHeader": false,
+                "icon": "material-icons text md-16 block",
+                "_id": "deactivate",
+                "label": "{{$i18n.deactivateActionLabel}}",
+                "multi": false,
+                "script": "\n                    return $db.set(\"users\", { _id: $item._id, isActive: false });\n                ",
+                "showInList": false,
+                "groupAccess": "",
+                "ownerAccess": "",
+                "props": null
+            },
+            {
+                "disableItemReadyCheck": false,
+                "hideInHeader": false,
+                "icon": "",
+                "_id": "changePassword",
+                "label": "{{$i18n.changePasswordActionLabel}}",
+                "multi": false,
+                "script": "\n                    if (!$data.newPassword) {\n                        throw new UserError(\"Please provide new password\");\n                    }\n\n                    const crypto = require(\"crypto\");\n                    const password = crypto.createHash(\"md5\").update($data.newPassword).digest(\"hex\");\n                    return $db.set(\"users\", { _id: $item._id, noPassword: null, password });\n                ",
+                "showInList": false,
+                "type": "form",
+                "groupAccess": "",
+                "ownerAccess": "",
+                "props": {
+                    "newPassword": {
+                        "display": "textInput",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "label": "{{$i18n.newPasswordLabel}}",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "required": true,
+                        "type": "string"
+                    }
+                }
+            },
+            {
+                "disableItemReadyCheck": false,
+                "hideInHeader": false,
+                "icon": "",
+                "_id": "changeLogin",
+                "label": "{{$i18n.changeLoginActionLabel}}",
+                "multi": false,
+                "script": "\n                    if (!$data.newLogin) {\n                        throw new UserError(\"Please provide new login\");\n                    }\n\n                    const fn = async () => {\n                        const i18n = require(\"i18n\");\n                        if ($item.login === $data.newLogin) {\n                            throw new UserError(i18n.get(\"users.sameLoginError\"), $user.lang);\n                        }\n\n                        const user = await $db.get(\"users\", { login: $data.newLogin }, { returnNull: true });\n                        if (user) {\n                            throw new UserError(i18n.get(\"users.loginBusyError\", $user.lang || \"en\", $data.newLogin));\n                        }\n\n                        return $db.set(\"users\", { _id: $item._id, login: $data.newLogin });\n                    };\n\n                    return fn();\n                ",
+                "showInList": false,
+                "type": "form",
+                "groupAccess": "",
+                "ownerAccess": "",
+                "props": {
+                    "newLogin": {
+                        "display": "textInput",
+                        "formOrder": 0,
+                        "groupAccess": "",
+                        "label": "{{$i18n.newLoginLabel}}",
+                        "name": "",
+                        "noAutoTrim": false,
+                        "ownerAccess": "",
+                        "required": true,
+                        "type": "string"
+                    }
+                }
+            }
+        ],
+        "display": "",
+        "enableLiveSearch": false,
+        "enableSavingFilters": false,
+        "filters": {
+            "_default": {
+                "display": "",
+                "multi": false,
+                "query": {
+                    "login": {
+                        "$options": "i",
+                        "$regex": "$value"
+                    }
+                },
+                "utc": false
+            }
+        },
+        "formTabs": null,
+        "groupAccess": "",
+        "headerProperty": "login",
+        "html": "",
+        "httpHooks": [
+            {
+                "method": "GET",
+                "script": "\n                    let fs = require(\"fs\");\n                    let handlebars = require(\"handlebars\");\n                    let user;\n                    return $db.get(\"users\", { _activationToken: $request.params[\"token\"] }).then(_user => {\n                        user = _user;\n                        return $db.set(\"users\", { _id: user._id, _activationToken: null, _activationExpires: null, isActive: true });\n                    }).then(() => {\n                        return fs.readLib(\"templates/activation-success.html\");\n                    }).then(template => {\n                        let body = handlebars.compile(template)({ user: user });\n                        return {\n                            type: \"html\",\n                            data: body,\n                        };\n                    }).catch(err => {\n                        console.debug(`[user activation] user not found with token: ${$request.params[\"token\"]}`, err);\n                        return fs.readLib(\"templates/activation-error.html\");\n                    }).then(template => {\n                        if (typeof template === \"object\") {\n                            return template;\n                        }\n                        let body = handlebars.compile(template)({});\n                        return {\n                            type: \"html\",\n                            data: body,\n                        };\n                    }).catch(err => {\n                        console.debug(`[user activation] error processing activation with token: ${$request.params[\"token\"]}`, err);\n                        return {\n                            type: \"html\",\n                            data: \"activation error\",\n                        };\n                    });\n                ",
+                "uri": "activation/:token"
+            }
+        ],
+        "i18n": {
+            "en": {
+                "activateActionLabel": "Activate",
+                "activeLabel": "Enabled",
+                "changeLoginActionLabel": "Change login",
+                "changePasswordActionLabel": "Change password",
+                "createdAt": "Registered: ",
+                "deactivateActionLabel": "Deactivate",
+                "emailLabel": "Email",
+                "inactiveLabel": "Disabled",
+                "label": "Users",
+                "langLabel": "Language",
+                "loginBusyError": "Login %s used another by user",
+                "loginLabel": "Login",
+                "newLoginLabel": "New login",
+                "newPasswordLabel": "New password",
+                "profileIdLabel": "Profile data",
+                "rolesLabel": "Roles",
+                "sameLoginError": "You entered the current login",
+                "workspaceLabel": "Interface"
+            },
+            "ru": {
+                "activateActionLabel": "Активировать",
+                "activeLabel": "Включен",
+                "changeLoginActionLabel": "Сменить логин",
+                "changePasswordActionLabel": "Сменить пароль",
+                "createdAt": "Зарегистрирован: ",
+                "deactivateActionLabel": "Деактивировать",
+                "emailLabel": "Email",
+                "inactiveLabel": "Отключен",
+                "label": "Пользователи",
+                "langLabel": "Язык",
+                "loginBusyError": "Логин %s занят другим пользователем",
+                "loginLabel": "Имя для входа",
+                "newLoginLabel": "Новый логин",
+                "newPasswordLabel": "Новый пароль",
+                "profileIdLabel": "Данные профиля",
+                "rolesLabel": "Роли",
+                "sameLoginError": "Вы ввели текущий логин",
+                "workspaceLabel": "Интерфейс"
+            }
+        },
+        "indexes": [
+            [
+                {
+                    "login": 1
+                },
+                {
+                    "unique": true
+                }
+            ]
+        ],
+        "label": "{{$i18n.label}}",
+        "labels": [
+            {
+                "icon": "fa fa-power-off",
+                "showInList": 1,
+                "hideInForm": true,
+                "color": "{{#if $item.isActive}}#43A047{{else}}#ddd{{/if}}"
+            },
+            {
+                "text": "{{#if $item.isActive}}{{$i18n.activeLabel}}{{else}}{{$i18n.inactiveLabel}}{{/if}}",
+                "color": "{{#if $item.isActive}}#00E676{{else}}#E0E0E0{{/if}}"
+            },
+            {
+                "text": "{{$i18n.createdAt}} {{moment $item.createdAt format=\"D MMMM, dd, HH:mm\"}}",
+                "showInList": 2,
+                "hideInForm": true,
+                "hidden": "!$item.createdAt"
+            }
+        ],
+        "navGroup": "config",
+        "navOrder": 0,
+        "objectLifeCycle": {
+            "willRemove": "\n                if ($item._id === \"00000000-0000-0000-0000-000000000000\") {\n                    throw new UserError(\"Cannot delete root user\");\n                }\n            "
+        },
+        "ownerAccess": "",
+        "props": {
+            "_activationExpires": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    }
+                ],
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "date"
+            },
+            "_activationToken": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    }
+                ],
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "_passwordResetExpires": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    }
+                ],
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "date"
+            },
+            "_passwordResetToken": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    }
+                ],
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "email": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    },
+                    {
+                        "condition": {
+                            "_id": {
+                                "$expression": "$user._id"
+                            }
+                        },
+                        "permissions": "r",
+                        "role": "all"
+                    }
+                ],
+                "disabled": "$item.$state !== 'new'",
+                "display": "textInput",
+                "formOrder": 20,
+                "groupAccess": "",
+                "label": "{{$i18n.emailLabel}}",
+                "maxLength": 50,
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "pattern": "^\\S+@\\S+\\.\\S+$",
+                "type": "string"
+            },
+            "facebookId": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    }
+                ],
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "isActive": {
+                "default": true,
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "Активен",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "bool"
+            },
+            "lang": {
+                "default": "en",
+                "display": "select",
+                "formOrder": 30,
+                "groupAccess": "",
+                "label": "{{$i18n.langLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "options": [
+                    {
+                        "label": "English",
+                        "value": "en"
+                    },
+                    {
+                        "label": "Русский",
+                        "value": "ru"
+                    }
+                ],
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "login": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    },
+                    {
+                        "condition": {
+                            "_id": {
+                                "$expression": "$user._id"
+                            }
+                        },
+                        "permissions": "r",
+                        "role": "all"
+                    }
+                ],
+                "disabled": "$item.$state !== 'new'",
+                "display": "textInput",
+                "formOrder": 10,
+                "groupAccess": "",
+                "label": "{{$i18n.loginLabel}}",
+                "maxLength": 50,
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            },
+            "name": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": ""
+            },
+            "noPassword": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "bool"
+            },
+            "password": {
+                "display": "none",
+                "formOrder": 0,
+                "groupAccess": "",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "password"
+            },
+            "profileId": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    },
+                    {
+                        "condition": {
+                            "_id": {
+                                "$expression": "$user._id"
+                            }
+                        },
+                        "permissions": "r",
+                        "role": "all"
+                    },
+                    {
+                        "condition": null,
+                        "permissions": "r",
+                        "role": "admin"
+                    }
+                ],
+                "disabled": true,
+                "display": "searchBox",
+                "formOrder": 0,
+                "groupAccess": "",
+                "label": "{{$i18n.profileIdLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "oppositeProp": "_ownerId",
+                "ownerAccess": "",
+                "searchBy": [
+                    "login"
+                ],
+                "store": "profiles",
+                "type": "ref"
+            },
+            "roles": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    },
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "admin"
+                    },
+                    {
+                        "condition": {
+                            "_id": {
+                                "$expression": "$user._id"
+                            }
+                        },
+                        "permissions": "r",
+                        "role": "all"
+                    }
+                ],
+                "display": "checkList",
+                "formOrder": 100,
+                "groupAccess": "",
+                "hidden": "$item._id === '00000000-0000-0000-0000-000000000000'",
+                "label": "{{$i18n.rolesLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "store": "_roles",
+                "style": {
+                    "display": "block"
+                },
+                "type": "refList"
+            },
+            "workspace": {
+                "access": [
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "root"
+                    },
+                    {
+                        "condition": null,
+                        "permissions": "crud",
+                        "role": "admin"
+                    }
+                ],
+                "display": "none",
+                "formOrder": 40,
+                "groupAccess": "",
+                "label": "{{$i18n.workspaceLabel}}",
+                "name": "",
+                "noAutoTrim": false,
+                "ownerAccess": "",
+                "type": "string"
+            }
+        },
+        "store": "",
+        "storeLifeCycle": {
+            "didStart": "\n                sync.once(\"$$usersDidStart\", () => {\n                    $db.waitForConnection().then(() => {\n                        console.info(\"Checking root user in DB...\");\n                        $db.get(\"users\", \"00000000-0000-0000-0000-000000000000\", (err, res) => {\n                            if (res == null || res._deleted || !res.password.hashed) {\n                                console.info(\"Root user does not exists, creating...\");\n                                const crypto = require(\"crypto\");\n                                const password = crypto.createHash(\"md5\").update(\"toor\").digest(\"hex\");\n                                return $db.set(\"users\", {\n                                    _id: \"00000000-0000-0000-0000-000000000000\",\n                                    roles: [\"root\"],\n                                    login: \"root\",\n                                    password,\n                                })\n                                    .then(res => console.info(\"Root user created\"))\n                                    .catch(err => console.error(\"Error while creating root user:\", err));\n                            } else {\n                                console.info(\"Root user OK!\");\n                            }\n                        });\n                    });\n                });\n            "
+        },
+        "tasks": [
+            {
+                "schedule": "*/30  *   *   *   *",
+                "script": "\n                                        $db.find(\"users\", {\n                        query: {\n                            _activationExpires: { $lte: new Date() },\n                            isActive: false,\n                        },\n                        take: 100,\n                    }).then(res => {\n                        if (res.items.length > 0) {\n                            console.debug(`[users][tasks][delete unactivated users] found ${res.items.length} unactivated users`);\n                            let promises = [];\n                            for (let user of res.items) {\n                                promises.push($db.delete(\"users\", user._id, { drop: true }));\n                            }\n                            return Promise.all(promises);\n                        }\n                    }).catch(err => {\n                        console.error(\"[users][tasks] can't process unactivated users\");\n                    }).then(() => {\n                                                return $db.find(\"users\", {\n                            query: {\n                                _passwordResetExpires: { $lte: new Date() },\n                            },\n                            take: 100,\n                        });\n                    }).then(res => {\n                        if (res.items.length > 0) {\n                            console.debug(`[users][tasks][rotten password reset requests] found ${res.items.length} rotten requests`);\n                            let promises = [];\n                            for (let user of res.items) {\n                                promises.push($db.set(\"users\", { _id: user._id, _passwordResetExpires: null, _passwordResetToken: null }));\n                            }\n                            return Promise.all(promises);\n                        }\n                    }).catch(err => {\n                        console.error(\"[users][tasks] can't process rotten password reset requests\");\n                    });\n                "
+            }
+        ],
+        "type": "directory",
+        "version": 0
+    }
+}
